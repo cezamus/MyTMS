@@ -50,7 +50,7 @@ public class AssignmentController extends ExceptionHandlingBaseController {
     }
 
     @Operation(summary = "Create an assigment using IDs of vehicle and trailer. " +
-            "If vehicle or trailer is already assigned in the specified period, operation will not be performed.")
+            "If vehicle or trailer is already assigned in the specified period, operation will not be performed.") // todo: check summary
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping(path = "force/{vehicle-id}/{trailer-id}")
     public void forceCreate(
@@ -63,7 +63,7 @@ public class AssignmentController extends ExceptionHandlingBaseController {
     }
 
     @Operation(summary = "Create an assigment using registration IDs of vehicle and trailer." +
-            "If vehicle or trailer is already assigned in the specified period, operation will not be performed.")
+            "If vehicle or trailer is already assigned in the specified period, operation will not be performed.") // todo: check summary
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping(path = "force")
     public void forceCreate(
